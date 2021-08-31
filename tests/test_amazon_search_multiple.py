@@ -6,7 +6,7 @@ import pytest
     "mac mini",
     "gaming laptop"
 ])
-@pytest.mark.regressiontest2
+@pytest.mark.regressiontest
 def test_amazon_search_title_multiple(browser, item):
     browser.get("https://www.amazon.com")
     browser.find_element_by_id("twotabsearchtextbox").send_keys(item)
